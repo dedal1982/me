@@ -308,3 +308,31 @@ button {
     align-items: center;
   }
 }
+.header__mobile {
+  top: 74px;
+  right: 0;
+  width: 100%;
+  height: 0;
+  background-color: #320606;
+  transition: 1s;
+  position: fixed;
+  overflow: auto;
+  transition: all 1s ease 0s;
+}
+@media screen and (max-width: 1210px) {
+  .header__mobile_open {
+    height: 100vh;
+
+    transition: all 1s ease 0s;
+  }
+  .header__mobile-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 50px;
+    padding-left: 30px;
+  }
+  .header__mobile-link {
+    color: #fff;
+  }
+}
