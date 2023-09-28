@@ -251,6 +251,11 @@ button {
   object-fit: cover;
   box-shadow: 0 0 10px 5px rgba(221, 221, 221, 1);
 }
+@media screen and (max-width: 600px) {
+  .hero__item-image {
+    box-shadow: 0 0 5px 2px rgba(221, 221, 221, 1);
+  }
+}
 .hero__card {
   cursor: pointer;
   width: 300px !important;
