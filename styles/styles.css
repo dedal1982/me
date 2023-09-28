@@ -247,6 +247,11 @@ button {
 }
 @media screen and (max-width: 1210px) {
   .hero__wrapper {
+    height: 60vh;
+  }
+}
+@media screen and (max-width: 500px) {
+  .hero__wrapper {
     height: 30vh;
   }
 }
