@@ -394,11 +394,11 @@ button {
   position: fixed;
   overflow: auto;
   transition: all 1s ease 0s;
+  z-index: 10;
 }
 @media screen and (max-width: 1210px) {
   .header__mobile_open {
     height: 100vh;
-
     transition: all 1s ease 0s;
   }
   .header__mobile-list {
