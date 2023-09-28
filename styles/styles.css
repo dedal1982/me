@@ -295,6 +295,7 @@ button {
   .hero__item-back {
     width: 150px !important;
     height: 150px !important;
+    pointer-events: none;
   }
 }
 @media screen and (max-width: 767px) {
