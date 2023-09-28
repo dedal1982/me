@@ -254,7 +254,7 @@ button {
 .hero__card {
   cursor: pointer;
   width: 300px !important;
-  height: 300px !important;
+  height: 360px !important;
   display: flex;
   align-items: center;
   justify-content: center;
