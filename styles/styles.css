@@ -42,7 +42,6 @@ button {
 }
 /*container*/
 .container {
-  max-width: 1920px;
   margin: 0 auto;
   padding-left: calc((100% - 1280px) / 2);
   padding-right: calc((100% - 1280px) / 2);
@@ -86,20 +85,7 @@ button {
   margin: 0 auto;
   align-items: center;
 }
-/* .header__logo {
-  font-size: 2em;
-  color: red;
-  padding-top: 15px;
-  padding-bottom: 15px;
-} */
-/* .header__logo {
-  width: 100px;
-  height: 100px;
-  background-image: url(../images/logo.jpg.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-} */
+
 .header__logo {
   width: 200px;
   height: 50px;
@@ -237,24 +223,110 @@ button {
 }
 .hero__wrapper {
   display: flex;
+  flex-direction: column;
+}
 
+.hero__top {
   width: 100%;
-  height: 100vh;
+  height: 500px;
   background-image: url(../images/hero-bg.jpg.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: top center;
 }
-@media screen and (max-width: 1210px) {
-  .hero__wrapper {
-    height: 60vh;
+@media screen and (max-width: 900px) {
+  .hero__top {
+    height: 300px;
   }
 }
-@media screen and (max-width: 500px) {
-  .hero__wrapper {
-    height: 30vh;
+@media screen and (max-width: 600px) {
+  .hero__top {
+    height: 200px;
   }
 }
+.hero__item-image {
+  border-radius: 20px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 2px solid #fff;
+}
+.hero__card {
+  cursor: pointer;
+  width: 300px !important;
+  height: 300px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (max-width: 768px) {
+  .hero__card {
+    width: 175px !important;
+    height: 175px !important;
+  }
+}
+@media screen and (max-width: 600px) {
+  .hero__card {
+    width: 167px !important;
+    height: 170px !important;
+  }
+}
+.hero__card:hover > .hero__item-front {
+  transform: perspective(600px) rotateY(-180deg);
+}
+.hero__card:hover > .hero__item-back {
+  transform: perspective(600px) rotateY(0deg);
+}
+.hero__item-front,
+.hero__item-back {
+  width: 280px !important;
+  height: 280px !important;
+  backface-visibility: hidden;
+  position: absolute;
+  transition: transform 0.6s linear;
+}
+@media screen and (max-width: 768px) {
+  .hero__item-front,
+  .hero__item-back {
+    width: 150px !important;
+    height: 150px !important;
+  }
+}
+@media screen and (max-width: 767px) {
+  .hero__item-front,
+  .hero__item-back {
+    width: 150px !important;
+    height: 150px !important;
+  }
+}
+.hero__item-front {
+  transform: perspective(600px) rotateY(0deg);
+}
+.hero__item-back {
+  transform: perspective(600px) rotateY(180deg);
+  background-color: #fff;
+  border-radius: 20px;
+}
+.hero__back-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  background: red;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  border: 2px solid #fff;
+}
+.hero__back-title {
+  color: #fff;
+  font-size: 24px;
+}
+.hero__back-link {
+  color: #fff;
+}
+
 .hero__list {
   display: flex;
   flex-direction: column;
@@ -339,4 +411,50 @@ button {
   .header__mobile-link {
     color: #fff;
   }
+}
+/*swiper*/
+.hero__swiper {
+  max-width: 1280px !important;
+  margin: 60px auto 30px;
+}
+@media screen and (max-width: 1280px) {
+  .hero__swiper {
+    max-width: 1000px !important;
+    margin-bottom: 60px;
+  }
+}
+@media screen and (max-width: 1010px) {
+  .hero__swiper {
+    max-width: 738px !important;
+    margin-top: 30px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .hero__swiper {
+    max-width: 345px !important;
+    margin: 0 auto 30px;
+  }
+}
+.hero__swiper-button-prev,
+.hero__swiper-button-next {
+  width: 40px !important;
+  height: 40px !important;
+  border-radius: 50% !important;
+  background: #000;
+  border: 2px solid red;
+}
+.hero__swiper-button-prev::after,
+.hero__swiper-button-next::after {
+  color: red;
+  font-size: 20px !important;
+}
+.hero__swiper-button-next {
+  right: var(--swiper-navigation-sides-offset, 0px) !important;
+}
+.hero__swiper-button-prev {
+  left: var(--swiper-navigation-sides-offset, 0px) !important;
+}
+
+.swiper-scrollbar {
+  display: none !important;
 }
