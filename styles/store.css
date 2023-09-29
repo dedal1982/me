@@ -2,14 +2,34 @@
 .store {
   background-color: azure;
 }
-
 .store__wrapper {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+@media screen and (max-width: 900px) {
+  .store__wrapper {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .store__wrapper {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    align-items: center;
+  }
+}
+.store__inner-title {
+  color: #000;
+}
+.store__inner {
   max-width: 1280px;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  padding-top: 100px;
-  padding-bottom: 100px;
 }
 .store__card {
   display: flex;
