@@ -37,7 +37,7 @@
   gap: 10px;
   width: 360px;
   height: 450px;
-  margin: 10px auto;
+  margin: 15px auto;
   padding: 1em;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3),
     -23px 0 20px -23px rgba(0, 0, 0, 0.8), 23px 0 20px -23px rgba(0, 0, 0, 0.8),
@@ -47,6 +47,7 @@
   .store__card {
     width: 300px;
     height: 400px;
+    margin: 10px auto;
   }
 }
 .store__image {
@@ -73,20 +74,52 @@
   font-weight: 400;
   font-style: normal;
   font-family: "Open Sans", sans-serif;
-  color: #000;
   font-size: 24px;
   line-height: 1.3;
   letter-spacing: 0px;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
+  color: black;
+  text-shadow: rgb(51 43 43 / 19%) 0px 3px 3px;
 }
 .store__price {
   font-weight: 400;
   font-style: normal;
   font-family: "Open Sans", sans-serif;
-  color: #000;
   font-size: 24px;
   line-height: 1.6;
   letter-spacing: 0px;
+  color: rgba(0, 0, 0, 0.6);
+  background-color: #666666;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  color: black;
+  text-shadow: rgb(51 43 43 / 19%) 0px 3px 3px;
+}
+.store__box {
+  display: flex;
+  justify-content: space-between;
+}
+.store__button {
+  font-family: "Open Sans";
+  width: 150px;
+  height: 100%;
+  background: #000;
+  color: #fff;
+  border-radius: 5px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease-in-out;
+}
+.store__button:hover {
+  opacity: 0.5;
+}
+@media screen and (max-width: 900px) {
+  .store__button {
+    width: 50%;
+  }
 }
