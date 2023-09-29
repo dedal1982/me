@@ -22,8 +22,32 @@
     align-items: center;
   }
 }
+.store__top {
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 767px) {
+  .store__top {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+.store__top-list {
+  display: flex;
+  gap: 30px;
+}
+@media screen and (max-width: 767px) {
+  .store__top-list {
+    justify-content: space-around;
+  }
+}
 .store__inner-title {
   color: #000;
+}
+@media screen and (max-width: 767px) {
+  .store__inner-title {
+    font-size: 30px;
+  }
 }
 .store__inner {
   max-width: 1280px;
