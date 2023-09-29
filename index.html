@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./pages/index.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -19,6 +18,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
     />
+    <link rel="stylesheet" href="./pages/index.css" />
     <title>MyHooD Recordzz</title>
   </head>
   <body class="page">
@@ -63,6 +63,9 @@
                 <a class="header__link active" href="#">ГЛАВНАЯ</a>
               </li>
               <li>
+                <a class="header__link" href="#news">НОВОСТИ</a>
+              </li>
+              <li>
                 <a class="header__link" href="#">О ЛЭЙБЛЕ</a>
               </li>
               <li>
@@ -98,6 +101,7 @@
           <div class="container">
             <div class="hero__wrapper">
               <div class="hero__top"></div>
+
               <div class="swiper hero__swiper">
                 <div class="swiper-wrapper hero__swiper-wrapper">
                   <div class="swiper-slide">
@@ -221,7 +225,7 @@
         <section class="interlayer">
           <h2 class="interlayer__text">Рэп Баттл D'yadya J.i. v THENOTFACE</h2>
         </section>
-        <section class="news">
+        <section id="news" class="news">
           <div class="container">
             <div class="news__wrapper">
               <div class="news__inner">
@@ -250,6 +254,32 @@
                         <span class="news__item-span">20.09.2023</span>
                       </div>
                     </div>
+                    <div class="news__item">
+                      <a class="news__item-link" href="#">
+                        <div class="news__item-img"></div>
+                      </a>
+                      <div class="news__item-box">
+                        <a class="news__item-text" href="#"
+                          >Lorem, ipsum dolor sit amet consectetur adipisicing
+                          elit. Nam, ab non ipsa numquam ad recusandae suscipit
+                          obcaecati illum odio adipisci.</a
+                        >
+                        <span class="news__item-span">20.09.2023</span>
+                      </div>
+                    </div>
+                    <div class="news__item">
+                      <a class="news__item-link" href="#">
+                        <div class="news__item-img"></div>
+                      </a>
+                      <div class="news__item-box">
+                        <a class="news__item-text" href="#"
+                          >Lorem, ipsum dolor sit amet consectetur adipisicing
+                          elit. Nam, ab non ipsa numquam ad recusandae suscipit
+                          obcaecati illum odio adipisci.</a
+                        >
+                        <span class="news__item-span">20.09.2023</span>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -257,10 +287,90 @@
           </div>
         </section>
       </main>
-      <footer class="footer"></footer>
+      <footer class="footer">
+        <div class="container">
+          <div class="header footer__wrapper">
+            <div class="footer__inner">
+              <ul class="header__list">
+                <li>
+                  <a class="header__link active" href="#">ГЛАВНАЯ</a>
+                </li>
+                <li>
+                  <a class="header__link" href="#">О ЛЭЙБЛЕ</a>
+                </li>
+                <li>
+                  <a class="header__link" href="#">КЛИПЫ</a>
+                </li>
+                <li>
+                  <a class="header__link" href="#">АРТИСТЫ</a>
+                </li>
+                <li>
+                  <a class="header__link" href="#">АЛЬБОМЫ</a>
+                </li>
+                <li>
+                  <a class="header__link" href="#">ГАЛЕРЕЯ</a>
+                </li>
+                <li>
+                  <a class="header__link" href="#">СЛЭНГ MyHooD</a>
+                </li>
+                <li>
+                  <a class="header__link" href="#">МАГАЗИН</a>
+                </li>
+                <li>
+                  <a class="header__link" href="#">КОНТАКТЫ</a>
+                </li>
+              </ul>
+              <ul class="header__list footer__list">
+                <li>
+                  <a
+                    class="header__link"
+                    href="https://www.youtube.com/c/MyHooDRecordzzSince2011"
+                    target="_blank"
+                    ><img
+                      class="footer__image"
+                      src="./images/youtube.png"
+                      alt="иконка"
+                  /></a>
+                </li>
+                <li>
+                  <a class="header__link" href="#"
+                    ><img
+                      class="footer__image"
+                      src="./images/insta.png"
+                      alt="иконка"
+                  /></a>
+                </li>
+                <li>
+                  <a
+                    class="header__link"
+                    href="https://vk.com/myhoodrecordzzsince2011"
+                    target="_blank"
+                    ><img
+                      class="footer__image"
+                      src="./images/vk.png"
+                      alt="иконка"
+                  /></a>
+                </li>
+                <li>
+                  <a
+                    class="header__link"
+                    href="https://wa.me/79688922535?text="
+                    target="_blank"
+                    ><img
+                      class="footer__image"
+                      src="./images/wtap.png"
+                      alt="иконка"
+                  /></a>
+                </li>
+              </ul>
+            </div>
+            <p class="footer__copyright">&#9773; by AlDm 2023</p>
+          </div>
+        </div>
+      </footer>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="./scripts/swiper.js"></script>
-    <script src="./scripts/index.js"></script>
+    <script src="./scripts/main.js"></script>
   </body>
 </html>
