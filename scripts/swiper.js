@@ -40,3 +40,36 @@
 //     },
 //   },
 // });
+var slideIndex = 0;
+var slides = document.getElementsByClassName("slide");
+
+function showSlide() {
+  // Скрытые все слайды
+  for (var i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+
+  // Показываем текущий слайд
+  slides[slideIndex].style.display = "block";
+}
+
+function nextSlide() {
+  if (slideIndex < slides.length - 1) {
+    slideIndex++;
+  } else {
+    slideIndex = 0;
+  }
+  showSlide();
+}
+
+function previousSlide() {
+  if (slideIndex > 0) {
+    slideIndex--;
+  } else {
+    slideIndex = slides.length - 1;
+  }
+  showSlide();
+}
+
+// Показываем первый слайд при загрузке страницы
+showSlide();

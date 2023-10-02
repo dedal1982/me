@@ -36,3 +36,35 @@ window.onscroll = function showHeader() {
     burgerFixed.classList.remove("header__burger-fixed");
   }
 };
+
+/*фул-фото*/
+const fullClickImages = document.querySelectorAll(".store__image");
+
+fullClickImages.forEach((el) => {
+  el.addEventListener("click", () => {
+    el.classList.toggle("active");
+  });
+});
+
+/*галерея табы*/
+const tabItems = Array.from(document.querySelectorAll(".gallery__tabs-item"));
+const formItems = Array.from(document.querySelectorAll(".gallery__inner"));
+
+const clearActiveTabs = (element, className = "active") => {
+  element.find((item) => item.classList.remove(`${className}`));
+};
+
+const setActiveTabs = (element, index, className = "active") => {
+  element[index].classList.add(`${className}`);
+};
+
+const chekTab = (item, index) => {
+  item.addEventListener("click", () => {
+    clearActiveTabs(tabItems);
+    clearActiveTabs(formItems);
+
+    setActiveTabs(tabItems, index);
+    setActiveTabs(formItems, index);
+  });
+};
+tabItems.forEach(chekTab);

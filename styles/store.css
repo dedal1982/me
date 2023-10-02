@@ -89,8 +89,9 @@
   height: 360px;
   transition: all 1s ease-out;
   object-fit: cover;
+  cursor: pointer;
 }
-.store__image:hover {
+.store__image.active {
   transform: scale(1.5);
   box-shadow: -20px 20px 0 -17px #fff, 20px -20px 0 -17px #fff,
     20px 20px 0 -20px #000, 0 0 0 2px #000;
