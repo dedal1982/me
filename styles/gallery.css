@@ -158,3 +158,20 @@
   display: flex;
   justify-content: space-around;
 }
+.slider-btn-L,
+.slider-btn-R {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  color: #000;
+  background: #ececec;
+}
+.slider-btn-L.active,
+.slider-btn-R.active {
+  background: #000;
+  color: #fff;
+}

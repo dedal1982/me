@@ -42,6 +42,8 @@
 // });
 var slideIndex = 0;
 var slides = document.getElementsByClassName("slide");
+var slideBtnR = document.querySelector(".slider-btn-R");
+var slideBtnL = document.querySelector(".slider-btn-L");
 
 function showSlide() {
   // Скрытые все слайды
@@ -56,6 +58,8 @@ function showSlide() {
 function nextSlide() {
   if (slideIndex < slides.length - 1) {
     slideIndex++;
+    slideBtnR.classList.add("active");
+    slideBtnL.classList.remove("active");
   } else {
     slideIndex = 0;
   }
@@ -65,6 +69,8 @@ function nextSlide() {
 function previousSlide() {
   if (slideIndex > 0) {
     slideIndex--;
+    slideBtnL.classList.add("active");
+    slideBtnR.classList.remove("active");
   } else {
     slideIndex = slides.length - 1;
   }
