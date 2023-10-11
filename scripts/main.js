@@ -68,3 +68,11 @@ const chekTab = (item, index) => {
   });
 };
 tabItems.forEach(chekTab);
+
+/*галерея видео*/
+function loadYouTubeVideo() {
+  var youtubeVideoDiv = document.getElementById("youtubeVideo");
+  youtubeVideoDiv.innerHTML =
+    //фрейм ютюб-видео(сюда вставить iframe нужного ролика)
+    '<iframe src="https://www.youtube.com/embed/oLY1rss9Jx8?si=-5eVgEZEd3nRIRP0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+}
