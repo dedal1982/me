@@ -62,7 +62,8 @@
 @media screen and (max-width: 767px) {
   .gallery__tabs {
     padding: 0;
-    gap: 20px;
+    gap: 0;
+    justify-content: space-around;
   }
 }
 .gallery__tabs-item {
@@ -114,7 +115,7 @@
 @media screen and (max-width: 767px) {
   .gallery__tabs-item,
   .gallery__tabs-item.active {
-    width: 50%;
+    width: 35%;
   }
 }
 .gallery__inner {
@@ -125,8 +126,8 @@
 }
 
 .gallery__video {
-  width: 300px;
-  height: 150px;
+  width: 275px;
+  height: 207px;
   margin: 30px auto;
   border-radius: 10px;
   box-shadow: 0 60px 80px rgba(0, 0, 0, 0.6), 0 45px 26px rgba(0, 0, 0, 0.14);
@@ -176,6 +177,9 @@
   cursor: pointer;
   color: #000;
   background: #ececec;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 .slider-btn-L.active,
 .slider-btn-R.active {
